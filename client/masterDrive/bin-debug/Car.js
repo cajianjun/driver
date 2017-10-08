@@ -56,7 +56,6 @@ var Car = (function (_super) {
     };
     Car.prototype.enterframe = function () {
         if (this.y > this.stage.stageHeight) {
-            console.log("i am dead");
             this._alive = false;
         }
         this.y += this.speedV;

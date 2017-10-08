@@ -13,39 +13,57 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var ToucheLayer = (function (_super) {
     __extends(ToucheLayer, _super);
-    // private _dleft = 0;
-    // private _dright = 0;
     function ToucheLayer() {
         var _this = _super.call(this) || this;
-        _this.leftTap = false;
-        _this.rightTap = false;
+        // private leftTouchPad:egret.Bitmap;
+        // private rightTouchPad:egret.Bitmap;
+        // private leftTap:boolean = false;
+        // private rightTap:boolean = false;
         _this._direction = 0;
-        _this.rightTouchPad = UIHelper.createBitmapByName("empty_png");
-        _this.leftTouchPad = UIHelper.createBitmapByName("empty_png");
-        _this.addChild(_this.leftTouchPad);
-        _this.addChild(_this.rightTouchPad);
-        //this.leftTouchPad.touchChildren = true;
-        _this.leftTouchPad.touchEnabled = true;
-        _this.leftTouchPad.addEventListener(egret.TouchEvent.TOUCH_TAP, _this.goLeft, _this);
-        _this.rightTouchPad.touchEnabled = true;
-        _this.rightTouchPad.addEventListener(egret.TouchEvent.TOUCH_TAP, _this.goRight, _this);
+        _this.touchPad = UIHelper.createBitmapByName("empty_png");
+        _this.addChild(_this.touchPad);
+        _this.touchPad.touchEnabled = true;
+        _this.touchPad.addEventListener(egret.TouchEvent.TOUCH_BEGIN, _this.onTouch, _this);
+        _this.touchPad.addEventListener(egret.TouchEvent.TOUCH_MOVE, _this.onTouch, _this);
+        _this.touchPad.addEventListener(egret.TouchEvent.TOUCH_END, _this.onEnd, _this);
         return _this;
+        // this.rightTouchPad = UIHelper.createBitmapByName("empty_png");
+        // this.leftTouchPad = UIHelper.createBitmapByName("empty_png");
+        // this.addChild(this.leftTouchPad);
+        // this.addChild(this.rightTouchPad);
+        // //this.leftTouchPad.touchChildren = true;
+        // this.leftTouchPad.touchEnabled = true;
+        // this.leftTouchPad.addEventListener(egret.TouchEvent.TOUCH_TAP,this.goLeft, this);
+        // this.rightTouchPad.touchEnabled = true;
+        // this.rightTouchPad.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goRight, this);
     }
-    ToucheLayer.prototype.goLeft = function () {
-        if (this._direction > 0) {
-            this._direction = 0;
-            return;
+    ToucheLayer.prototype.onTouch = function (evt) {
+        var touchX = evt.stageX;
+        if (touchX < Constants.stageW / 2) {
+            this._direction = -1;
         }
-        this._direction--;
+        else if (touchX > Constants.stageW / 2) {
+            this._direction = 1;
+        }
     };
-    ToucheLayer.prototype.goRight = function () {
-        if (this._direction < 0) {
-            this._direction = 0;
-            return;
-        }
-        this._direction++;
+    ToucheLayer.prototype.onEnd = function (evt) {
+        this._direction = 0;
     };
     Object.defineProperty(ToucheLayer.prototype, "direction", {
+        // private goLeft():void{
+        //     if(this._direction > 0){
+        //         this._direction = 0;
+        //         return;
+        //     }
+        //     this._direction --;
+        // }
+        // private goRight():void{
+        //     if(this._direction < 0){
+        //         this._direction = 0;
+        //         return;
+        //     }
+        //     this._direction ++;
+        // }
         get: function () {
             return this._direction;
         },
@@ -58,11 +76,13 @@ var ToucheLayer = (function (_super) {
     ToucheLayer.prototype.initView = function () {
         this.height = this.stage.stageHeight;
         this.width = this.stage.stageWidth;
-        this.leftTouchPad.height = this.height;
-        this.leftTouchPad.width = this.width / 2;
-        this.rightTouchPad.height = this.height;
-        this.rightTouchPad.width = this.width / 2;
-        this.rightTouchPad.x = this.width / 2;
+        this.touchPad.height = this.height;
+        this.touchPad.width = this.width;
+        // this.leftTouchPad.height = this.height;
+        // this.leftTouchPad.width = this.width/2;
+        // this.rightTouchPad.height = this.height;
+        // this.rightTouchPad.width = this.width/2;
+        // this.rightTouchPad.x = this.width/2;
     };
     return ToucheLayer;
 }(egret.Sprite));

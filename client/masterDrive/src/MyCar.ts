@@ -23,6 +23,14 @@ class MyCar extends Car {
         this._rect.height = this.body.height-10;
     }
 
+    public enterframe():void{
+        super.enterframe();
+        if(this.x < 0){this.x = 0;}
+        if(this.x > Constants.stageW-this.body.width){
+            this.x = Constants.stageW-this.body.width;
+        }
+        
+    }
 
 
     public updateDirectionH(direction:number):void{

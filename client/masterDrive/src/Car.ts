@@ -48,7 +48,6 @@ class Car extends egret.Sprite {
 
     public enterframe():void{
         if(this.y > this.stage.stageHeight){
-            console.log("i am dead");
             this._alive = false;
         }
         this.y  += this.speedV; 

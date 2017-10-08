@@ -32,6 +32,15 @@ var MyCar = (function (_super) {
         this._rect.width = this.body.width - 10;
         this._rect.height = this.body.height - 10;
     };
+    MyCar.prototype.enterframe = function () {
+        _super.prototype.enterframe.call(this);
+        if (this.x < 0) {
+            this.x = 0;
+        }
+        if (this.x > Constants.stageW - this.body.width) {
+            this.x = Constants.stageW - this.body.width;
+        }
+    };
     MyCar.prototype.updateDirectionH = function (direction) {
         this.speedH = direction;
     };
