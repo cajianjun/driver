@@ -1,0 +1,33 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/game/game.js",
+		"libs/modules/res/res.js",
+		"libs/modules/tween/tween.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/socket/socket.js",
+		"libs/modules/mylib/mylib.js"
+	],
+	"game": [
+		"bin-debug/Car.js",
+		"bin-debug/ui/layers/EuiComponent.js",
+		"bin-debug/TouchLayer.js",
+		"bin-debug/EnermyFactory.js",
+		"bin-debug/GameCenter.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/Main.js",
+		"bin-debug/MyCar.js",
+		"bin-debug/StatusEvent.js",
+		"bin-debug/Background.js",
+		"bin-debug/UIHelper.js",
+		"bin-debug/common/Constants.js",
+		"bin-debug/common/UIConsts.js",
+		"bin-debug/ui/component/Toast.js",
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/ui/layers/GameOverLayer.js",
+		"bin-debug/ui/layers/GamingLayer.js",
+		"bin-debug/ui/layers/StartGameLayer.js",
+		"bin-debug/ui/layers/UIController.js"
+	]
+}

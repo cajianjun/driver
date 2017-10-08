@@ -1,0 +1,18 @@
+{
+  "autoGenerateExmlsList": true,
+  "exmls": [
+    {
+      "path": "resource/skins/GameOverLayerSkin.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"GameOverLayerSkin\" width=\"640\" height=\"1136\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:w=\"http://ns.egret.com/wing\">\n\t<e:Label id=\"txt_final_score\" text=\"\" x=\"0\" y=\"533\" width=\"640\" size=\"50\" textAlign=\"center\" verticalAlign=\"middle\" />\n\t<e:Button id=\"btn_restart\"  width=\"120\" height=\"120\" horizontalCenter=\"0\" verticalCenter=\"-95\" enabled=\"true\">\n\t\t<e:skinName>\n\t\t\t<e:Skin states=\"up,down,disabled\">\n\t\t\t<e:Image width=\"100%\" height=\"100%\" width.down=\"80%\" height.down=\"80%\" source=\"restart_png\" source.down=\"restart_png\" source.disabled=\"restart_png\" horizontalCenter=\"0\" verticalCenter=\"0\"/>\n\t\t\t</e:Skin>\n\t\t</e:skinName>\n\t</e:Button>\n</e:Skin>"
+    },
+    {
+      "path": "resource/skins/GamingLayerSkin.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"GamingLayerSkin\" width=\"640\" height=\"1136\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:w=\"http://ns.egret.com/wing\">\n\t<e:Label id=\"txt_speed\" text=\"\" x=\"0\" y=\"0\" textAlign=\"left\" bold=\"true\" fontFamily=\"SimSun\" anchorOffsetX=\"0\" width=\"136.12\" anchorOffsetY=\"0\" height=\"31.52\" size=\"40\"/>\n\t<e:Label id=\"txt_score\" text=\"\" y=\"0\" fontFamily=\"SimSun\" anchorOffsetX=\"0\" width=\"118.67\" right=\"0\" textAlign=\"right\" size=\"40\" textColor=\"0x00ff00\"/>\n\t<e:Label id=\"txt_ready\" text=\"\"  size=\"100\" textAlign=\"center\" verticalAlign=\"middle\"  x=\"3.5\" y=\"518\" anchorOffsetX=\"0\" width=\"633\" visible=\"false\"/>\n\t\n</e:Skin>"
+    },
+    {
+      "path": "resource/skins/StartGameLayerSkin.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"StartGameLayerSkin\" width=\"640\" height=\"1136\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:w=\"http://ns.egret.com/wing\">\n\t<e:Button id=\"btn_start\"  width=\"120\" height=\"120\" horizontalCenter=\"0\" verticalCenter=\"-60\" enabled=\"true\">\n\t\t<e:skinName>\n\t\t\t<e:Skin states=\"up,down,disabled\">\n\t\t\t<e:Image width=\"100%\" height=\"100%\" width.down=\"80%\" height.down=\"80%\" source=\"start_png\" source.down=\"start_png\" source.disabled=\"start_png\" horizontalCenter=\"0\" verticalCenter=\"0\"/>\n\t\t\t</e:Skin>\n\t\t</e:skinName>\n\t</e:Button>\n    <e:Button id=\"btn_rank\"  width=\"120\" height=\"120\" horizontalCenter=\"0\" verticalCenter=\"60\" enabled=\"true\">\n\t\t<e:skinName>\n\t\t\t<e:Skin states=\"up,down,disabled\">\n\t\t\t<e:Image width=\"100%\" height=\"100%\" width.down=\"80%\" height.down=\"80%\" source=\"rank_png\" source.down=\"rank_png\" source.disabled=\"rank_png\" horizontalCenter=\"0\" verticalCenter=\"0\"/>\n\t\t\t</e:Skin>\n\t\t</e:skinName>\n\t</e:Button>\n</e:Skin>"
+    }
+  ],
+  "skins": {}
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GamingLayerSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="txt_speed" text="" x="0" y="0" textAlign="left" bold="true" fontFamily="SimSun" anchorOffsetX="0" width="136.12" anchorOffsetY="0" height="31.52" size="40"/>
+	<e:Label id="txt_score" text="" y="0" fontFamily="SimSun" anchorOffsetX="0" width="118.67" right="0" textAlign="right" size="40" textColor="0x00ff00"/>
+	<e:Label id="txt_ready" text=""  size="100" textAlign="center" verticalAlign="middle"  x="3.5" y="518" anchorOffsetX="0" width="633" visible="false"/>
+	
+</e:Skin>
