@@ -1,0 +1,329 @@
+= Patent API
+YK <yingkai.tang@duyanipr.com>
+v0.2, 2017-06-14
+:toc: left
+:toc-title: Patent API列表
+:numbered:
+
+==== [red]#/patent/contract/assignee/add#
+====
+描述：添加受让主体
+[%hardbreaks]
+http header请求参数：::
+include::{snippets}/contract-assignee-add/request-headers.adoc[]
+http body请求参数：::
+include::{snippets}/contract-assignee-add/request-fields.adoc[]
+返回参数：::
+include::{snippets}/contract-assignee-add/response-fields.adoc[]
+请求例子：::
+include::{snippets}/contract-assignee-add/http-request.adoc[]
+返回例子：::
+include::{snippets}/contract-assignee-add/http-response.adoc[]
+====
+
+==== [red]#/patent/contract/assignee/delete#
+====
+描述：删除受让主体
+[%hardbreaks]
+http header请求参数：::
+include::{snippets}/contract-assignee-delete/request-headers.adoc[]
+http body请求参数：::
+include::{snippets}/contract-assignee-delete/request-fields.adoc[]
+返回参数：::
+include::{snippets}/contract-assignee-delete/response-fields.adoc[]
+请求例子：::
+include::{snippets}/contract-assignee-delete/http-request.adoc[]
+返回例子：::
+include::{snippets}/contract-assignee-delete/http-response.adoc[]
+====
+
+==== [red]#/patent/contract/assignee/get#
+====
+描述：获取单个受让主体
+[%hardbreaks]
+http header请求参数：::
+include::{snippets}/contract-assignee-get/request-headers.adoc[]
+http body请求参数：::
+include::{snippets}/contract-assignee-get/request-fields.adoc[]
+返回参数：::
+include::{snippets}/contract-assignee-get/response-fields.adoc[]
+请求例子：::
+include::{snippets}/contract-assignee-get/http-request.adoc[]
+返回例子：::
+include::{snippets}/contract-assignee-get/http-response.adoc[]
+====
+
+==== [red]#/patent/contract/assignee/list#
+====
+描述：获取受让主体列表
+[%hardbreaks]
+http header请求参数：::
+include::{snippets}/contract-assignee-list/request-headers.adoc[]
+返回参数：::
+include::{snippets}/contract-assignee-list/response-fields.adoc[]
+请求例子：::
+include::{snippets}/contract-assignee-list/http-request.adoc[]
+返回例子：::
+include::{snippets}/contract-assignee-list/http-response.adoc[]
+====
+
+==== [red]#/patent/contract/assignee/update#
+====
+描述：更新受让主体
+[%hardbreaks]
+http header请求参数：::
+include::{snippets}/contract-assignee-update/request-headers.adoc[]
+http body请求参数：::
+include::{snippets}/contract-assignee-update/request-fields.adoc[]
+返回参数：::
+include::{snippets}/contract-assignee-update/response-fields.adoc[]
+请求例子：::
+include::{snippets}/contract-assignee-update/http-request.adoc[]
+返回例子：::
+include::{snippets}/contract-assignee-update/http-response.adoc[]
+====
+
+==== [red]#/patent/contract/owner/add#
+====
+描述：添加合同主体
+[%hardbreaks]
+http header请求参数：::
+include::{snippets}/contract-owner-add/request-headers.adoc[]
+http body请求参数：::
+include::{snippets}/contract-owner-add/request-fields.adoc[]
+返回参数：::
+include::{snippets}/contract-owner-add/response-fields.adoc[]
+请求例子：::
+include::{snippets}/contract-owner-add/http-request.adoc[]
+返回例子：::
+include::{snippets}/contract-owner-add/http-response.adoc[]
+====
+
+==== [red]#/patent/contract/owner/delete#
+====
+描述：删除合同主体
+[%hardbreaks]
+http header请求参数：::
+include::{snippets}/contract-owner-delete/request-headers.adoc[]
+http body请求参数：::
+include::{snippets}/contract-owner-delete/request-fields.adoc[]
+返回参数：::
+include::{snippets}/contract-owner-delete/response-fields.adoc[]
+请求例子：::
+include::{snippets}/contract-owner-delete/http-request.adoc[]
+返回例子：::
+include::{snippets}/contract-owner-delete/http-response.adoc[]
+====
+
+==== [red]#/patent/contract/owner/get#
+====
+描述：获取单个合同主体
+[%hardbreaks]
+http header请求参数：::
+include::{snippets}/contract-owner-get/request-headers.adoc[]
+http body请求参数：::
+include::{snippets}/contract-owner-get/request-fields.adoc[]
+返回参数：::
+include::{snippets}/contract-owner-get/response-fields.adoc[]
+请求例子：::
+include::{snippets}/contract-owner-get/http-request.adoc[]
+返回例子：::
+include::{snippets}/contract-owner-get/http-response.adoc[]
+====
+
+==== [red]#/patent/contract/owner/list#
+====
+描述：获取合同主体列表
+[%hardbreaks]
+http header请求参数：::
+include::{snippets}/contract-owner-list/request-headers.adoc[]
+返回参数：::
+include::{snippets}/contract-owner-list/response-fields.adoc[]
+请求例子：::
+include::{snippets}/contract-owner-list/http-request.adoc[]
+返回例子：::
+include::{snippets}/contract-owner-list/http-response.adoc[]
+====
+
+==== [red]#/patent/contract/owner/update#
+====
+描述：更新合同主体
+[%hardbreaks]
+http header请求参数：::
+include::{snippets}/contract-owner-update/request-headers.adoc[]
+http body请求参数：::
+include::{snippets}/contract-owner-update/request-fields.adoc[]
+返回参数：::
+include::{snippets}/contract-owner-update/response-fields.adoc[]
+请求例子：::
+include::{snippets}/contract-owner-update/http-request.adoc[]
+返回例子：::
+include::{snippets}/contract-owner-update/http-response.adoc[]
+====
+
+==== /patent/favorite/add
+====
+描述：添加收藏
+[%hardbreaks]
+http header请求参数：::
+include::{snippets}/patent-favorite-add/request-headers.adoc[]
+http body请求参数：::
+include::{snippets}/patent-favorite-add/request-fields.adoc[]
+返回参数：::
+include::{snippets}/patent-favorite-add/response-fields.adoc[]
+请求例子：::
+include::{snippets}/patent-favorite-add/http-request.adoc[]
+返回例子：::
+include::{snippets}/patent-favorite-add/http-response.adoc[]
+====
+
+==== /patent/favorite/delete
+====
+描述：删除收藏的专利
+[%hardbreaks]
+http header请求参数：::
+include::{snippets}/patent-favorite-delete/request-headers.adoc[]
+http body请求参数：::
+include::{snippets}/patent-favorite-delete/request-fields.adoc[]
+返回参数：::
+include::{snippets}/patent-favorite-delete/response-fields.adoc[]
+请求例子：::
+include::{snippets}/patent-favorite-delete/http-request.adoc[]
+返回例子：::
+include::{snippets}/patent-favorite-delete/http-response.adoc[]
+====
+
+==== /patent/favorite/get
+====
+描述：获取收藏
+[%hardbreaks]
+http header请求参数：::
+include::{snippets}/patent-favorite-get/request-headers.adoc[]
+返回参数：::
+include::{snippets}/patent-favorite-get/response-fields.adoc[]
+请求例子：::
+include::{snippets}/patent-favorite-get/http-request.adoc[]
+返回例子：::
+include::{snippets}/patent-favorite-get/http-response.adoc[]
+====
+
+==== /patent/info/detail
+====
+描述：专利详情
+[%hardbreaks]
+请求参数：::
+include::{snippets}/patent-info-detail/request-fields.adoc[]
+返回参数：::
+include::{snippets}/patent-info-detail/response-fields.adoc[]
+请求例子：::
+include::{snippets}/patent-info-detail/http-request.adoc[]
+返回例子：::
+include::{snippets}/patent-info-detail/http-response.adoc[]
+====
+
+==== /patent/info/latest
+====
+描述：最新的专利列表
+[%hardbreaks]
+请求参数：::
+include::{snippets}/patent-info-latestpatent/request-fields.adoc[]
+返回参数：::
+include::{snippets}/patent-info-latestpatent/response-fields.adoc[]
+请求例子：::
+include::{snippets}/patent-info-latestpatent/http-request.adoc[]
+返回例子：::
+include::{snippets}/patent-info-latestpatent/http-response.adoc[]
+====
+
+==== /patent/query/keywords
+====
+描述：专利大数据搜索接口，获取专利大数据列表。
+[%hardbreaks]
+[red yellow-background]#最新修改：修改返回参数，修改链接。#
+[%hardbreaks]
+请求参数：::
+include::{snippets}/patent-query/request-fields.adoc[]
+返回参数：::
+include::{snippets}/patent-query/response-fields.adoc[]
+请求例子：::
+include::{snippets}/patent-query/http-request.adoc[]
+返回例子：::
+include::{snippets}/patent-query/http-response.adoc[]
+====
+
+==== /patent/query/trade
+====
+描述：专利搜索接口，获取全部或交易专利。
+[%hardbreaks]
+请求参数：::
+include::{snippets}/patent-trade-query/request-fields.adoc[]
+返回参数：::
+include::{snippets}/patent-trade-query/response-fields.adoc[]
+请求例子：::
+include::{snippets}/patent-trade-query/http-request.adoc[]
+返回例子：::
+include::{snippets}/patent-trade-query/http-response.adoc[]
+====
+
+==== /patent/tradeinfo/detail
+====
+描述：查看交易专利的具体内容。
+请求参数：::
+include::{snippets}/patent-tradeinfo-detail/request-fields.adoc[]
+返回参数：::
+include::{snippets}/patent-tradeinfo-detail/response-fields.adoc[]
+请求例子：::
+include::{snippets}/patent-tradeinfo-detail/http-request.adoc[]
+返回例子：::
+include::{snippets}/patent-tradeinfo-detail/http-response.adoc[]
+====
+
+==== /patent/recommend
+====
+描述：首页推荐专利。
+[%hardbreaks]
+返回参数：::
+include::{snippets}/patent-recommend/response-fields.adoc[]
+请求例子：::
+include::{snippets}/patent-recommend/http-request.adoc[]
+返回例子：::
+include::{snippets}/patent-recommend/http-response.adoc[]
+====
+
+==== /patent/tradeinfo/listByIpcsection
+====
+描述：通过大类号码获取正在交易的专利列表
+[%hardbreaks]
+请求参数：::
+include::{snippets}/patent-tradeinfo-listByIpcsection/request-fields.adoc[]
+返回参数：::
+include::{snippets}/patent-tradeinfo-listByIpcsection/response-fields.adoc[]
+请求例子：::
+include::{snippets}/patent-tradeinfo-listByIpcsection/http-request.adoc[]
+返回例子：::
+include::{snippets}/patent-tradeinfo-listByIpcsection/http-response.adoc[]
+====
+
+==== /patent/tradeinfo/statistics
+====
+描述：获取交易统计信息 
+[%hardbreaks]
+返回参数：::
+include::{snippets}/patent-tradeinfo-statistics/response-fields.adoc[]
+请求例子：::
+include::{snippets}/patent-tradeinfo-statistics/http-request.adoc[]
+返回例子：::
+include::{snippets}/patent-tradeinfo-statistics/http-response.adoc[]
+====
+
+==== /patent/tradeinfo/toptrading
+====
+描述：获取热门的交易。例如：交易首页中间的推荐，大数据搜索右侧推荐。
+[%hardbreaks]
+返回参数：::
+include::{snippets}/patent-tradeinfo-toptrading/response-fields.adoc[]
+请求例子：::
+include::{snippets}/patent-tradeinfo-toptrading/http-request.adoc[]
+返回例子：::
+include::{snippets}/patent-tradeinfo-toptrading/http-response.adoc[]
+====

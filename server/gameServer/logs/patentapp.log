@@ -1,0 +1,6 @@
+[INFO ] 2017-10-11 00:16:41.123 [http-nio-9001-exec-9] GameCenterController - add record,req=AddScoreReq [id=0, username=cjj, score=11, remark=老子曹日地]
+[INFO ] 2017-10-11 00:16:44.041 [http-nio-9001-exec-10] GameCenterController - top10
+[INFO ] 2017-10-11 00:16:54.380 [RMI TCP Connection(2)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2017-10-11 00:16:54.381 [RMI TCP Connection(2)-127.0.0.1] AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@26794848: startup date [Tue Oct 10 23:54:26 CST 2017]; root of context hierarchy
+[INFO ] 2017-10-11 00:16:54.383 [RMI TCP Connection(2)-127.0.0.1] DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+[INFO ] 2017-10-11 00:16:54.384 [RMI TCP Connection(2)-127.0.0.1] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
