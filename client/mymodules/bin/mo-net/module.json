@@ -1,0 +1,9 @@
+{
+    "modules" : ["mo-base", "socket"],
+    "source" : "src",
+    "files" : [
+        "Pomelo.ts",
+        "PomeloBinary.ts",
+        "Net.ts"
+    ]
+}

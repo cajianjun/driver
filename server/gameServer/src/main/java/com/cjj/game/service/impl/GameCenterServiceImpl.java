@@ -33,7 +33,7 @@ public class GameCenterServiceImpl implements GameCenterService {
 	@Override
 	public List<ScoresEntity> getTopTen() {
 		
-		return scoresMapper.getOrderByScore();
+		return scoresMapper.getOrderByScore("game_center");
 	}
 	
 }

@@ -24,7 +24,7 @@ module net{
                 request.removeEventListener(egret.IOErrorEvent.IO_ERROR, onError, self);
                 console.log(event);
             }
-            request.send();
+            request.send(JSON.stringify(data));
             request.addEventListener(egret.Event.COMPLETE,onSuccess,this);
             request.addEventListener(egret.IOErrorEvent.IO_ERROR,onError,this);
         }
