@@ -22,6 +22,9 @@ var GameOverLayer = (function (_super) {
     GameOverLayer.prototype._tap_btn_restart = function () {
         gc.gameCenter.restartGame();
     };
+    GameOverLayer.prototype._tap_btn_upscore = function () {
+        gc.uiController.showLayer(UIConsts.LAYER_SEND_SCORE);
+    };
     return GameOverLayer;
 }(EuiComponent));
 __reflect(GameOverLayer.prototype, "GameOverLayer");

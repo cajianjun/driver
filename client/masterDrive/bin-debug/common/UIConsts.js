@@ -7,6 +7,8 @@ var UIConsts = (function () {
     UIConsts.LAYER_START_GAME = "StartGameLayer";
     UIConsts.LAYER_GAME_OVER = "GameOverLayer";
     UIConsts.LAYER_GAMING = "GamingLayer";
+    UIConsts.LAYER_SEND_SCORE = "SendScoreLayer";
+    UIConsts.LAYER_RANK = "RankLayer";
     return UIConsts;
 }());
 __reflect(UIConsts.prototype, "UIConsts");

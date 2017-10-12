@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="GameOverLayerSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Label id="txt_final_score" text="" x="0" y="533" width="640" size="50" textAlign="center" verticalAlign="middle" />
+	<e:Label id="txt_final_score" text="啊实打实的" x="0" y="533" width="640" size="50" textAlign="center" verticalAlign="middle" />
 	<e:Button id="btn_restart"  width="120" height="120" horizontalCenter="0" verticalCenter="-95" enabled="true">
 		<e:skinName>
 			<e:Skin states="up,down,disabled">
 			<e:Image width="100%" height="100%" width.down="80%" height.down="80%" source="restart_png" source.down="restart_png" source.disabled="restart_png" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+
+	<e:Button id="btn_upscore"  width="120" height="120" horizontalCenter="0" verticalCenter="150" enabled="true">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" width.down="80%" height.down="80%" source="upscore_png" source.down="upscore_png" source.disabled="upscore_png" horizontalCenter="0" verticalCenter="0"/>
 			</e:Skin>
 		</e:skinName>
 	</e:Button>

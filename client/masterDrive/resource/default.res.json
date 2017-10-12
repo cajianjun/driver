@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,font_fnt,font_png,car1_green_png,car1_orange_png,car1_purple_png,car1_yellow_png,car1_red_png,car1_blue_png,empty_png,start_png,restart_png,rect_png,white_png,black_png,rank_png,toast_bg_png",
+			"keys": "description_json,font_fnt,font_png,car1_green_png,car1_orange_png,car1_purple_png,car1_yellow_png,car1_red_png,car1_blue_png,empty_png,start_png,restart_png,rect_png,white_png,black_png,rank_png,toast_bg_png,commit_png,upscore_png",
 			"name": "preload"
 		}
 	],
@@ -90,6 +90,16 @@
 			"name": "toast_bg_png",
 			"type": "image",
 			"url": "assets/ui/toast_bg.png"
+		},
+		{
+			"name": "commit_png",
+			"type": "image",
+			"url": "assets/icon/commit.png"
+		},
+		{
+			"name": "upscore_png",
+			"type": "image",
+			"url": "assets/icon/upscore.png"
 		}
 	]
 }
