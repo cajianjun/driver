@@ -22,7 +22,7 @@ class GameCenter {
     /**我方车辆*/
     private _mycar:MyCar;
     /**对方车辆*/
-    private enermys:Array<Car> = [];
+    private enermys:Array<Enermy> = [];
     /**触摸层*/
     private toucheLayer:ToucheLayer;
 

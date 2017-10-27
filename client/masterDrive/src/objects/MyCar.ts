@@ -28,6 +28,13 @@ class MyCar extends Car {
 
         this.y  += this.speedV; 
         this.x  += this.speedH*this.speedHUnit;
+        if(this.speedH > 0){
+            this.rotation = 5;
+        }else if(this.speedH < 0){
+            this.rotation = -5;
+        }else{
+            this.rotation = 0;
+        }
         if(this.x < 0){this.x = 0;}
         if(this.x > Constants.stageW-this.body.width){
             this.x = Constants.stageW-this.body.width;
