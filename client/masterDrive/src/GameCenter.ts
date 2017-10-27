@@ -34,9 +34,6 @@ class GameCenter {
     private _distance:number;
     /**上次记录时间*/
     private _lastTime:number;
-    private MAX_ENERMY_SPEED = [8,12,16,20,24,28,32,36,40,44];
-    private MAX_SPEED = [10,20,30,40,50,60,70,80,90,100];
-    private MAX_SPEED_TIME = [5000,15000,25000,40000,55000,70000,90000,130000,160000,200000];
     public constructor() {
         this.initData();
     }
@@ -63,7 +60,7 @@ class GameCenter {
         this._mycar = new MyCar();
         this._carLayer.addChild(this._mycar);
         Constants.spaceLW = this._bg.spaceLW;
-        this._mycar.initView();
+        this._mycar.init();
 
 
         //添加触摸层
@@ -84,9 +81,11 @@ class GameCenter {
             this._mycar.enterframe();
             this.enermys.map(item => item.enterframe());
             this.checkDead();
-            var newCar:Car = EnermyFactory.createEnermy(this._carLayer);
-            if(newCar){
-                this.enermys.push(newCar);
+            var newCarArray:Array = EnermyFactory.createEnermy(this._carLayer);
+            if(newCarArray.length > 0){
+                for(var i =0;i < newCarArray.length;i++){
+                    this.enermys.push(newCarArray[i]);
+                }               
             }
             gc.uiController.cur_layer.updateUI(null);
             break;
@@ -115,7 +114,7 @@ class GameCenter {
         //init EnermyFactory
         EnermyFactory.init();
         //init MyCar 
-        this._mycar.initView();
+        this._mycar.init();
 
         this.toucheLayer.initData();
         //remove all enermys
@@ -147,7 +146,7 @@ class GameCenter {
     }
 
     public get speed():number{
-        return this.MAX_SPEED[this.getSpeedIndex()];
+        return Config.MAX_SPEED[this.getSpeedIndex()];
     }
 
     public get score():number{
@@ -156,7 +155,7 @@ class GameCenter {
 
     public get enermySpeed():number
     {
-        return this.MAX_ENERMY_SPEED[this.getSpeedIndex()];
+        return Config.MAX_ENERMY_SPEED[this.getSpeedIndex()];
     }
 
     public get cur_status():number{
@@ -169,8 +168,8 @@ class GameCenter {
 
     public getSpeedIndex():number{
         var i = 0;
-        for(var len=this.MAX_SPEED_TIME.length;i < len;i++){
-            if(this._time < this.MAX_SPEED_TIME[i]){
+        for(var len=Config.MAX_SPEED_TIME.length;i < len;i++){
+            if(this._time < Config.MAX_SPEED_TIME[i]){
                 return i;
             }
         }

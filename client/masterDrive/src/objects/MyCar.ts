@@ -9,7 +9,7 @@ class MyCar extends Car {
         this.addChild(this.body);
     }
 
-    public initView():void{
+    public init():void{
         var myspaceLW =Constants.spaceLW - 40;
         var stageW = this.stage.stageWidth;
         var stageH = this.stage.stageHeight;
@@ -25,11 +25,13 @@ class MyCar extends Car {
 
     public enterframe():void{
         super.enterframe();
+
+        this.y  += this.speedV; 
+        this.x  += this.speedH*this.speedHUnit;
         if(this.x < 0){this.x = 0;}
         if(this.x > Constants.stageW-this.body.width){
             this.x = Constants.stageW-this.body.width;
         }
-        
     }
 
 

@@ -18,6 +18,8 @@ class Background extends egret.Sprite {
     private spaceH:number;
     private _speed:number = 100;
     private _spaceLW :number;
+    private _targetSpeed:number = 0;
+    private _curJiasudu = 0;
     public constructor() {
         super();
         this.createView();
@@ -85,7 +87,19 @@ class Background extends egret.Sprite {
     }
 
     public enterframe():void{
-        this._speed = gc.gameCenter.speed;
+        this._targetSpeed = gc.gameCenter.speed;
+
+        //加速缓冲，三秒内完成加速,三秒约等于100帧
+        if(this._curJiasudu == 0 && this._targetSpeed != this._speed){
+            this._curJiasudu = (this._targetSpeed - this._speed)/100;
+        }
+        if(this._speed < this._targetSpeed){
+            this.speed += this._curJiasudu;
+        }else{
+            this._speed = this._targetSpeed;
+            this._curJiasudu = 0;
+        }
+        
         this.turnTop(this.lineLeft1);
         this.turnTop(this.lineLeft2);
         this.turnTop(this.lineLeft3);
