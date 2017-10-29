@@ -95,6 +95,9 @@ class Main extends egret.DisplayObjectContainer {
         //初始化toast
         Toast.init( this, RES.getRes( "toast_bg_png" ) ); 
 
+        //初始化net
+        net.http = new net.HttpHelper();
+
         //绑定全局帧监听事件
         this.addEventListener(egret.Event.ENTER_FRAME, this.loop, this);
     }

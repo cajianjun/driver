@@ -21,7 +21,7 @@
 		"bin-debug/StatusEvent.js",
 		"bin-debug/TouchLayer.js",
 		"bin-debug/UIHelper.js",
-		"bin-debug/ui/layers/UIController.js",
+		"bin-debug/Background.js",
 		"bin-debug/common/UIConsts.js",
 		"bin-debug/net/HttpHelper.js",
 		"bin-debug/net/Route.js",
@@ -32,6 +32,6 @@
 		"bin-debug/ui/layers/RankLayer.js",
 		"bin-debug/ui/layers/SendScoreLayer.js",
 		"bin-debug/ui/layers/StartGameLayer.js",
-		"bin-debug/Background.js"
+		"bin-debug/ui/layers/UIController.js"
 	]
 }

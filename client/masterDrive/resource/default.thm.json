@@ -4,6 +4,7 @@
     "resource/skins/GameOverLayerSkin.exml",
     "resource/skins/GamingLayerSkin.exml",
     "resource/skins/RankLayerSkin.exml",
+    "resource/skins/RankListItemSkin.exml",
     "resource/skins/SendScoreLayerSkin.exml",
     "resource/skins/StartGameLayerSkin.exml"
   ],

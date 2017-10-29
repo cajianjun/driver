@@ -10,6 +10,6 @@ class StartGameLayer extends EuiComponent{
     }
 
     _tap_btn_rank():void{
-        Toast.launch("抱歉还没做！");
+        gc.uiController.showLayer(UIConsts.LAYER_RANK);
     }
 }

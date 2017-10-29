@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RankListItemSkin" width="400" height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="txt_username" text="{data.username}" x="133" y="35" textAlign="left" anchorOffsetX="0" width="266"/>
+	<e:Label id="txt_score" text="{data.score}" x="0" y="35" anchorOffsetX="0" width="117" verticalAlign="middle" textAlign="center"/>
+</e:Skin>

@@ -5,7 +5,6 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import com.cjj.entity.ScoresEntity;
@@ -25,7 +24,7 @@ public class GameCenterServiceImpl implements GameCenterService {
 	
 	@Override
 	public void addScores(AddScoreReq request) {
-		request.setUsername("test");
+		request.setUsername(request.getUsername());
 		scoresMapper.insert(new ScoresEntity(0,request.getUsername(),request.getScore()
 				,request.getRemark()));
 	}

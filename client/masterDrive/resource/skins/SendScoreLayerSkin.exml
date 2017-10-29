@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="SendScoreLayerSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui">
-	<e:EditableText id="edt_username" width="615.15" height="50" anchorOffsetX="0" anchorOffsetY="0" prompt="尊姓大名" promptColor="0x0024ff" textAlign="left" textColor="0x000000" border="true" borderColor="0xe6f709" y="200" x="18" verticalAlign="middle"/>
-	<e:EditableText id="edt_remark" width="615.15" height="100" anchorOffsetX="0" anchorOffsetY="0" prompt="输入您想说的话" promptColor="0x0024FF" textAlign="left" textColor="0x000000" border="true" borderColor="0xE6F709" y="334.24" x="24.85" verticalAlign="middle"/>
+	<e:EditableText id="edt_username" width="640" height="50" anchorOffsetX="0" anchorOffsetY="0" prompt="尊姓大名" promptColor="0x0024ff" textAlign="left" textColor="0x000000" border="true" borderColor="0xe6f709" y="200" x="0" verticalAlign="middle" backgroundColor="0xe3f4f4" background="true"/>
+	<e:EditableText id="edt_remark" width="640" height="100" anchorOffsetX="0" anchorOffsetY="0" prompt="输入您想说的话" promptColor="0x0024FF" textAlign="left" textColor="0x000000" border="true" borderColor="0xE6F709" y="334.24" x="0" verticalAlign="middle" backgroundColor="0xf7f9f9" background="true"/>
     <e:Button id="btn_send"  width="120" height="120" horizontalCenter="0" verticalCenter="60" enabled="true">
 		<e:skinName>
 			<e:Skin states="up,down,disabled">
