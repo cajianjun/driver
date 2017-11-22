@@ -1,18 +1,20 @@
-class Enermy extends egret.Sprite {
-    private move_mode:number = 1;
+class Enermy extends Car {
+    private _move_mode:number = 1;
     public constructor() {
         super();
     }
 
     public initAI(obj:any){
         //第几赛道
-        var road_index:number = any[0];
+        var road_index:number = obj[0];
         //纵向位置加成
-        var y_position_offset:number = any[1];
+        var y_position_offset:number = obj[1];
         //横向速度
-        this.speedH = any[2];
+        this.speedH = obj[2];
         //运动模式
-        this._move_mode = any[3];
+        this._move_mode = obj[3];
+        //纵向运动速度
+        this.speedV = obj[4];
     /*
         var myspaceLW =Constants.spaceLW - 40;
         var stageW = this.stage.stageWidth;
@@ -41,9 +43,9 @@ class Enermy extends egret.Sprite {
     public enterframe():void{
         super.enterframe();
         this.y  += this.speedV; 
-        if(this.move_mode == Config.MOVE_MODE_NONE){
+        if(this._move_mode == Config.MOVE_MODE_NONE){
 
-        }else if(this.move_mode == Config.MOVE_MODE_ONE_DIRECTION){
+        }else if(this._move_mode == Config.MOVE_MODE_ONE_DIRECTION){
             if(this.y > Config.DANCING_LINE){
             this.x  += this.speedH*this.speedHUnit;
             }
@@ -54,7 +56,7 @@ class Enermy extends egret.Sprite {
             if(this.x > (Constants.stageW - this._rect.width)){
                 this.x = (Constants.stageW - this._rect.width)
             }
-        }else if(this.move_mode == Config.MOVE_MODE_COME_GO){
+        }else if(this._move_mode == Config.MOVE_MODE_COME_GO){
             if(this.y > Config.DANCING_LINE){
                 this.x  += this.speedH*this.speedHUnit;
             }

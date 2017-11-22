@@ -94,7 +94,7 @@ class Background extends egret.Sprite {
             this._curJiasudu = (this._targetSpeed - this._speed)/100;
         }
         if(this._speed < this._targetSpeed){
-            this.speed += this._curJiasudu;
+            this._speed += this._curJiasudu;
         }else{
             this._speed = this._targetSpeed;
             this._curJiasudu = 0;

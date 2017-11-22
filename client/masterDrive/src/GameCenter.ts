@@ -81,7 +81,7 @@ class GameCenter {
             this._mycar.enterframe();
             this.enermys.map(item => item.enterframe());
             this.checkDead();
-            var newCarArray:Array = EnermyFactory.createEnermy(this._carLayer);
+            var newCarArray:Array<any> = EnermyFactory.createEnermy(this._carLayer);
             if(newCarArray.length > 0){
                 for(var i =0;i < newCarArray.length;i++){
                     this.enermys.push(newCarArray[i]);
@@ -196,7 +196,7 @@ class GameCenter {
         var deadArr = [];
         this.enermys.map(item => {if(!item.alive){deadArr.push(item)}});
         for(var i = 0 ; i < deadArr.length;i++){
-            var car:Car = deadArr[i];
+            var car:Enermy = deadArr[i];
             this.enermys.splice(this.enermys.indexOf(car),1);
             car.destory();
             this._carLayer.removeChild(car);
