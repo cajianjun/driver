@@ -5,6 +5,7 @@ public class Constants {
 	public static final String TASK_FAILED = "FAILED";
 
 	public static final String GAME_CENTER = "/gc";
+	public static final String FACE_REC = "/face";
 	
 	
 }
