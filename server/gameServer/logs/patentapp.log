@@ -1,212 +1,232 @@
-[INFO ] 2017-10-12 11:35:29.451 [main] PatentServerApplication - Starting PatentServerApplication on DESKTOP-4P6MLVA with PID 11428 (C:\projects\others\server\gameServer\target\classes started by 10308 in C:\projects\others\server\gameServer)
-[INFO ] 2017-10-12 11:35:29.461 [main] PatentServerApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2017-10-12 11:35:29.496 [main] AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43c1b556: startup date [Thu Oct 12 11:35:29 CST 2017]; root of context hierarchy
-[INFO ] 2017-10-12 11:35:29.561 [background-preinit] Version - HV000001: Hibernate Validator 5.3.5.Final
-[INFO ] 2017-10-12 11:35:30.127 [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-[INFO ] 2017-10-12 11:35:30.440 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.cjj.game.config.RedisConfig$$EnhancerBySpringCGLIB$$e7e1e08a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[INFO ] 2017-10-12 11:35:30.447 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$98a71330] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[INFO ] 2017-10-12 11:35:30.473 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.cjj.game.config.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[INFO ] 2017-10-12 11:35:30.473 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$e1b9494e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[INFO ] 2017-10-12 11:35:30.701 [main] TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9001 (http)
-[INFO ] 2017-10-12 11:35:30.709 [main] StandardService - Starting service [Tomcat]
-[INFO ] 2017-10-12 11:35:30.710 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
-[INFO ] 2017-10-12 11:35:30.791 [localhost-startStop-1] [/gamecenter] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2017-10-12 11:35:30.791 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1297 ms
-[INFO ] 2017-10-12 11:35:30.932 [localhost-startStop-1] ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
-[INFO ] 2017-10-12 11:35:30.936 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'simpleCorsFilter' to: [/*]
-[INFO ] 2017-10-12 11:35:30.936 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-[INFO ] 2017-10-12 11:35:30.936 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-[INFO ] 2017-10-12 11:35:30.936 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-[INFO ] 2017-10-12 11:35:30.937 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-[INFO ] 2017-10-12 11:35:31.523 [main] RequestMappingHandlerMapping - Mapped "{[/gc/top10],methods=[POST]}" onto public com.cjj.response.GeneralResponse com.cjj.game.controller.GameCenterController.top10()
-[INFO ] 2017-10-12 11:35:31.524 [main] RequestMappingHandlerMapping - Mapped "{[/gc/add],methods=[POST]}" onto public com.cjj.response.GeneralResponse com.cjj.game.controller.GameCenterController.getContractOwner(com.cjj.request.AddScoreReq)
-[INFO ] 2017-10-12 11:35:31.525 [main] RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
-[INFO ] 2017-10-12 11:35:31.528 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
-[INFO ] 2017-10-12 11:35:31.529 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
-[INFO ] 2017-10-12 11:35:31.529 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
-[INFO ] 2017-10-12 11:35:31.532 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-[INFO ] 2017-10-12 11:35:31.532 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-[INFO ] 2017-10-12 11:35:32.177 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43c1b556: startup date [Thu Oct 12 11:35:29 CST 2017]; root of context hierarchy
-[INFO ] 2017-10-12 11:35:32.219 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2017-10-12 11:35:32.219 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2017-10-12 11:35:32.247 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[WARN ] 2017-10-12 11:35:32.437 [main] RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
-[INFO ] 2017-10-12 11:35:32.482 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-[INFO ] 2017-10-12 11:35:32.489 [main] DefaultLifecycleProcessor - Starting beans in phase 2147483647
-[INFO ] 2017-10-12 11:35:32.489 [main] DocumentationPluginsBootstrapper - Context refreshed
-[INFO ] 2017-10-12 11:35:32.501 [main] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-[INFO ] 2017-10-12 11:35:32.508 [main] ApiListingReferenceScanner - Scanning for api listing references
-[INFO ] 2017-10-12 11:35:32.610 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
-[INFO ] 2017-10-12 11:35:32.618 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
-[INFO ] 2017-10-12 11:35:32.626 [main] NioSelectorPool - Using a shared selector for servlet write/read
-[INFO ] 2017-10-12 11:35:32.640 [main] TomcatEmbeddedServletContainer - Tomcat started on port(s): 9001 (http)
-[INFO ] 2017-10-12 11:35:32.644 [main] PatentServerApplication - Started PatentServerApplication in 3.343 seconds (JVM running for 4.052)
-[INFO ] 2017-10-12 11:35:58.751 [http-nio-9001-exec-7] [/gamecenter] - Initializing Spring FrameworkServlet 'dispatcherServlet'
-[INFO ] 2017-10-12 11:35:58.751 [http-nio-9001-exec-7] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
-[INFO ] 2017-10-12 11:35:58.768 [http-nio-9001-exec-7] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
-[INFO ] 2017-10-12 11:36:04.083 [http-nio-9001-exec-10] GameCenterController - top10
-[INFO ] 2017-10-12 11:36:06.815 [http-nio-9001-exec-10] XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
-[INFO ] 2017-10-12 11:36:06.872 [http-nio-9001-exec-10] SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
-[ERROR] 2017-10-12 11:36:06.888 [http-nio-9001-exec-10] [dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/gamecenter] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
-### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''game_center'.scores ORDER BY score desc limit 0,10' at line 1
-### The error may exist in com/cjj/mapper/ScoresMapper.java (best guess)
-### The error may involve com.cjj.mapper.ScoresMapper.getOrderByScore-Inline
-### The error occurred while setting parameters
-### SQL: SELECT * FROM ?.scores ORDER BY score desc limit 0,10
-### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''game_center'.scores ORDER BY score desc limit 0,10' at line 1
-; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''game_center'.scores ORDER BY score desc limit 0,10' at line 1] with root cause
-com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''game_center'.scores ORDER BY score desc limit 0,10' at line 1
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_144]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_144]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_144]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_144]
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
-	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.43.jar:5.1.43]
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943) ~[mysql-connector-java-5.1.43.jar:5.1.43]
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973) ~[mysql-connector-java-5.1.43.jar:5.1.43]
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909) ~[mysql-connector-java-5.1.43.jar:5.1.43]
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527) ~[mysql-connector-java-5.1.43.jar:5.1.43]
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680) ~[mysql-connector-java-5.1.43.jar:5.1.43]
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2494) ~[mysql-connector-java-5.1.43.jar:5.1.43]
-	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858) ~[mysql-connector-java-5.1.43.jar:5.1.43]
-	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197) ~[mysql-connector-java-5.1.43.jar:5.1.43]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
-	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114) ~[tomcat-jdbc-8.5.16.jar:?]
-	at com.sun.proxy.$Proxy113.execute(Unknown Source) ~[?:?]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141) ~[mybatis-3.4.0.jar:3.4.0]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434) ~[mybatis-spring-1.3.0.jar:1.3.0]
-	at com.sun.proxy.$Proxy74.selectList(Unknown Source) ~[?:?]
-	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:231) ~[mybatis-spring-1.3.0.jar:1.3.0]
-	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:128) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:68) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53) ~[mybatis-3.4.0.jar:3.4.0]
-	at com.sun.proxy.$Proxy77.getOrderByScore(Unknown Source) ~[?:?]
-	at com.cjj.game.service.impl.GameCenterServiceImpl.getTopTen(GameCenterServiceImpl.java:36) ~[classes/:?]
-	at com.cjj.game.controller.GameCenterController.top10(GameCenterController.java:40) ~[classes/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.16.jar:8.5.16]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
-	at com.cjj.game.config.SimpleCorsFilter.doFilter(SimpleCorsFilter.java:36) ~[classes/:?]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
-[INFO ] 2017-10-12 11:38:20.521 [RMI TCP Connection(2)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-[INFO ] 2017-10-12 11:38:20.522 [RMI TCP Connection(2)-127.0.0.1] AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43c1b556: startup date [Thu Oct 12 11:35:29 CST 2017]; root of context hierarchy
-[INFO ] 2017-10-12 11:38:20.524 [RMI TCP Connection(2)-127.0.0.1] DefaultLifecycleProcessor - Stopping beans in phase 2147483647
-[INFO ] 2017-10-12 11:38:20.525 [RMI TCP Connection(2)-127.0.0.1] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
-[INFO ] 2017-10-12 11:38:26.833 [main] PatentServerApplication - Starting PatentServerApplication on DESKTOP-4P6MLVA with PID 11656 (C:\projects\others\server\gameServer\target\classes started by 10308 in C:\projects\others\server\gameServer)
-[INFO ] 2017-10-12 11:38:26.842 [main] PatentServerApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2017-10-12 11:38:26.876 [main] AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43c1b556: startup date [Thu Oct 12 11:38:26 CST 2017]; root of context hierarchy
-[INFO ] 2017-10-12 11:38:26.945 [background-preinit] Version - HV000001: Hibernate Validator 5.3.5.Final
-[INFO ] 2017-10-12 11:38:27.467 [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-[INFO ] 2017-10-12 11:38:27.766 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.cjj.game.config.RedisConfig$$EnhancerBySpringCGLIB$$b3fed8e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[INFO ] 2017-10-12 11:38:27.772 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$64c40b86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[INFO ] 2017-10-12 11:38:27.794 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.cjj.game.config.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[INFO ] 2017-10-12 11:38:27.795 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$add641a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[INFO ] 2017-10-12 11:38:28.011 [main] TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9001 (http)
-[INFO ] 2017-10-12 11:38:28.019 [main] StandardService - Starting service [Tomcat]
-[INFO ] 2017-10-12 11:38:28.020 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
-[INFO ] 2017-10-12 11:38:28.097 [localhost-startStop-1] [/gamecenter] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2017-10-12 11:38:28.098 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1224 ms
-[INFO ] 2017-10-12 11:38:28.218 [localhost-startStop-1] ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
-[INFO ] 2017-10-12 11:38:28.221 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'simpleCorsFilter' to: [/*]
-[INFO ] 2017-10-12 11:38:28.222 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-[INFO ] 2017-10-12 11:38:28.222 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-[INFO ] 2017-10-12 11:38:28.222 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-[INFO ] 2017-10-12 11:38:28.222 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-[INFO ] 2017-10-12 11:38:28.751 [main] RequestMappingHandlerMapping - Mapped "{[/gc/top10],methods=[POST]}" onto public com.cjj.response.GeneralResponse com.cjj.game.controller.GameCenterController.top10()
-[INFO ] 2017-10-12 11:38:28.754 [main] RequestMappingHandlerMapping - Mapped "{[/gc/add],methods=[POST]}" onto public com.cjj.response.GeneralResponse com.cjj.game.controller.GameCenterController.getContractOwner(com.cjj.request.AddScoreReq)
-[INFO ] 2017-10-12 11:38:28.754 [main] RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
-[INFO ] 2017-10-12 11:38:28.757 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
-[INFO ] 2017-10-12 11:38:28.757 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
-[INFO ] 2017-10-12 11:38:28.758 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
-[INFO ] 2017-10-12 11:38:28.761 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-[INFO ] 2017-10-12 11:38:28.761 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-[INFO ] 2017-10-12 11:38:29.372 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43c1b556: startup date [Thu Oct 12 11:38:26 CST 2017]; root of context hierarchy
-[INFO ] 2017-10-12 11:38:29.411 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2017-10-12 11:38:29.411 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2017-10-12 11:38:29.438 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[WARN ] 2017-10-12 11:38:29.614 [main] RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
-[INFO ] 2017-10-12 11:38:29.651 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-[INFO ] 2017-10-12 11:38:29.657 [main] DefaultLifecycleProcessor - Starting beans in phase 2147483647
-[INFO ] 2017-10-12 11:38:29.658 [main] DocumentationPluginsBootstrapper - Context refreshed
-[INFO ] 2017-10-12 11:38:29.671 [main] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-[INFO ] 2017-10-12 11:38:29.680 [main] ApiListingReferenceScanner - Scanning for api listing references
-[INFO ] 2017-10-12 11:38:29.779 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
-[INFO ] 2017-10-12 11:38:29.787 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
-[INFO ] 2017-10-12 11:38:29.796 [main] NioSelectorPool - Using a shared selector for servlet write/read
-[INFO ] 2017-10-12 11:38:29.808 [main] TomcatEmbeddedServletContainer - Tomcat started on port(s): 9001 (http)
-[INFO ] 2017-10-12 11:38:29.812 [main] PatentServerApplication - Started PatentServerApplication in 3.13 seconds (JVM running for 3.818)
-[INFO ] 2017-10-12 11:38:32.355 [http-nio-9001-exec-1] [/gamecenter] - Initializing Spring FrameworkServlet 'dispatcherServlet'
-[INFO ] 2017-10-12 11:38:32.355 [http-nio-9001-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
-[INFO ] 2017-10-12 11:38:32.371 [http-nio-9001-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
-[INFO ] 2017-10-12 11:38:32.390 [http-nio-9001-exec-1] GameCenterController - top10
-[INFO ] 2017-10-12 12:53:36.481 [RMI TCP Connection(2)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-[INFO ] 2017-10-12 12:53:36.485 [RMI TCP Connection(2)-127.0.0.1] AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43c1b556: startup date [Thu Oct 12 11:38:26 CST 2017]; root of context hierarchy
-[INFO ] 2017-10-12 12:53:36.495 [RMI TCP Connection(2)-127.0.0.1] DefaultLifecycleProcessor - Stopping beans in phase 2147483647
-[INFO ] 2017-10-12 12:53:36.498 [RMI TCP Connection(2)-127.0.0.1] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2017-11-22 11:14:34.569 [main] PatentServerApplication - Starting PatentServerApplication on DESKTOP-4P6MLVA with PID 23444 (C:\projects\others\server\gameServer\target\classes started by 10308 in C:\projects\others\server\gameServer)
+[INFO ] 2017-11-22 11:14:34.653 [main] PatentServerApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-11-22 11:14:34.735 [main] AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43c1b556: startup date [Wed Nov 22 11:14:34 CST 2017]; root of context hierarchy
+[INFO ] 2017-11-22 11:14:34.820 [background-preinit] Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2017-11-22 11:14:35.623 [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2017-11-22 11:14:36.005 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.cjj.game.config.RedisConfig$$EnhancerBySpringCGLIB$$3ded9c20] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2017-11-22 11:14:36.010 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eeb2cec6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2017-11-22 11:14:36.035 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.cjj.game.config.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2017-11-22 11:14:36.036 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$37c504e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2017-11-22 11:14:36.363 [main] TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9001 (http)
+[INFO ] 2017-11-22 11:14:36.378 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2017-11-22 11:14:36.380 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+[INFO ] 2017-11-22 11:14:36.492 [localhost-startStop-1] [/gamecenter] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2017-11-22 11:14:36.492 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1771 ms
+[INFO ] 2017-11-22 11:14:36.633 [localhost-startStop-1] ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2017-11-22 11:14:36.636 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'simpleCorsFilter' to: [/*]
+[INFO ] 2017-11-22 11:14:36.637 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2017-11-22 11:14:36.637 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2017-11-22 11:14:36.637 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2017-11-22 11:14:36.637 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2017-11-22 11:14:37.341 [main] RequestMappingHandlerMapping - Mapped "{[/face/file],methods=[POST]}" onto public com.cjj.response.GeneralResponse com.cjj.game.controller.FaceController.uploadWithIdCardPhoto(org.springframework.web.multipart.MultipartFile)
+[INFO ] 2017-11-22 11:14:37.343 [main] RequestMappingHandlerMapping - Mapped "{[/face/age],methods=[POST]}" onto public com.cjj.response.GeneralResponse com.cjj.game.controller.FaceController.getContractOwner(com.cjj.request.SingleValueReq)
+[INFO ] 2017-11-22 11:14:37.343 [main] RequestMappingHandlerMapping - Mapped "{[/gc/top10],methods=[POST]}" onto public com.cjj.response.GeneralResponse com.cjj.game.controller.GameCenterController.top10()
+[INFO ] 2017-11-22 11:14:37.344 [main] RequestMappingHandlerMapping - Mapped "{[/gc/add],methods=[POST]}" onto public com.cjj.response.GeneralResponse com.cjj.game.controller.GameCenterController.getContractOwner(com.cjj.request.AddScoreReq)
+[INFO ] 2017-11-22 11:14:37.344 [main] RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2017-11-22 11:14:37.348 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2017-11-22 11:14:37.349 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2017-11-22 11:14:37.350 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2017-11-22 11:14:37.353 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2017-11-22 11:14:37.353 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2017-11-22 11:14:38.085 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43c1b556: startup date [Wed Nov 22 11:14:34 CST 2017]; root of context hierarchy
+[INFO ] 2017-11-22 11:14:38.136 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2017-11-22 11:14:38.137 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2017-11-22 11:14:38.172 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN ] 2017-11-22 11:14:38.406 [main] RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+[INFO ] 2017-11-22 11:14:38.443 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2017-11-22 11:14:38.450 [main] DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2017-11-22 11:14:38.450 [main] DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2017-11-22 11:14:38.491 [main] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2017-11-22 11:14:38.501 [main] ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2017-11-22 11:14:38.634 [main] CachingOperationNameGenerator - Generating unique operation named: getContractOwnerUsingPOST_1
+[INFO ] 2017-11-22 11:14:38.664 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+[INFO ] 2017-11-22 11:14:38.671 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+[INFO ] 2017-11-22 11:14:38.772 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2017-11-22 11:14:38.801 [main] TomcatEmbeddedServletContainer - Tomcat started on port(s): 9001 (http)
+[INFO ] 2017-11-22 11:14:38.816 [main] PatentServerApplication - Started PatentServerApplication in 4.476 seconds (JVM running for 5.369)
+[INFO ] 2017-11-22 11:15:37.849 [http-nio-9001-exec-1] [/gamecenter] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2017-11-22 11:15:37.850 [http-nio-9001-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2017-11-22 11:15:37.894 [http-nio-9001-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+[INFO ] 2017-11-22 11:15:52.010 [http-nio-9001-exec-3] FaceController - Write file to \uploadFiles\photos\users\jpg\024767D8-0C30-4455-888B-FF1493C86A25.jpg.
+[INFO ] 2017-11-22 13:40:55.845 [http-nio-9001-exec-4] FaceController - Write file to \uploadFiles\photos\users\jpg\D71ED54E-C4DA-4A87-99F2-DF08E73E8E78.jpg.
+[INFO ] 2017-11-22 13:41:56.511 [http-nio-9001-exec-6] FaceController - Write file to \uploadFiles\photos\users\jpg\68F2DBDD-EE8E-4909-B144-3CDEB624D2A3.jpg.
+[INFO ] 2017-11-22 13:47:30.730 [http-nio-9001-exec-5] FaceController - Write file to \uploadFiles\photos\users\jpg\659517E5-3DD2-47D9-B0CF-C796110DB70A.jpg.
+[INFO ] 2017-11-22 14:22:55.119 [RMI TCP Connection(4)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2017-11-22 14:22:55.120 [RMI TCP Connection(4)-127.0.0.1] AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43c1b556: startup date [Wed Nov 22 11:14:34 CST 2017]; root of context hierarchy
+[INFO ] 2017-11-22 14:22:55.119 [RMI TCP Connection(3)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2017-11-22 14:22:55.351 [RMI TCP Connection(4)-127.0.0.1] DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+[INFO ] 2017-11-22 14:22:55.610 [RMI TCP Connection(4)-127.0.0.1] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2017-11-22 14:23:05.146 [main] PatentServerApplication - Starting PatentServerApplication on DESKTOP-4P6MLVA with PID 24628 (C:\projects\others\server\gameServer\target\classes started by 10308 in C:\projects\others\server\gameServer)
+[INFO ] 2017-11-22 14:23:05.191 [main] PatentServerApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-11-22 14:23:05.395 [main] AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43c1b556: startup date [Wed Nov 22 14:23:05 CST 2017]; root of context hierarchy
+[INFO ] 2017-11-22 14:23:05.595 [background-preinit] Version - HV000001: Hibernate Validator 5.3.5.Final
+[WARN ] 2017-11-22 14:23:05.659 [main] AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.cjj.game.PatentServerApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'simpleCorsFilter' for bean class [com.cjj.game.filter.SimpleCorsFilter] conflicts with existing, non-compatible bean definition of same name and class [com.cjj.game.config.SimpleCorsFilter]
+[ERROR] 2017-11-22 14:23:05.659 [main] DefaultListableBeanFactory - Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43c1b556: startup date [Wed Nov 22 14:23:05 CST 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:414) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.destroySingletons(FactoryBeanRegistrySupport.java:230) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1030) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:556) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at com.cjj.game.PatentServerApplication.main(PatentServerApplication.java:20) [classes/:?]
+[ERROR] 2017-11-22 14:23:05.789 [main] SpringApplication - Application startup failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.cjj.game.PatentServerApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'simpleCorsFilter' for bean class [com.cjj.game.filter.SimpleCorsFilter] conflicts with existing, non-compatible bean definition of same name and class [com.cjj.game.config.SimpleCorsFilter]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:308) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:270) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:93) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at com.cjj.game.PatentServerApplication.main(PatentServerApplication.java:20) [classes/:?]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'simpleCorsFilter' for bean class [com.cjj.game.filter.SimpleCorsFilter] conflicts with existing, non-compatible bean definition of same name and class [com.cjj.game.config.SimpleCorsFilter]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:345) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:283) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:135) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:287) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:198) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	... 13 more
+[INFO ] 2017-11-22 14:23:44.727 [main] PatentServerApplication - Starting PatentServerApplication on DESKTOP-4P6MLVA with PID 11944 (C:\projects\others\server\gameServer\target\classes started by 10308 in C:\projects\others\server\gameServer)
+[INFO ] 2017-11-22 14:23:44.736 [main] PatentServerApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-11-22 14:23:44.774 [main] AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43c1b556: startup date [Wed Nov 22 14:23:44 CST 2017]; root of context hierarchy
+[INFO ] 2017-11-22 14:23:44.842 [background-preinit] Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2017-11-22 14:23:46.037 [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2017-11-22 14:23:46.671 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.cjj.game.config.RedisConfig$$EnhancerBySpringCGLIB$$3d878db2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2017-11-22 14:23:46.677 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ee4cc058] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2017-11-22 14:23:46.702 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.cjj.game.config.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2017-11-22 14:23:46.703 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$375ef676] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2017-11-22 14:23:47.193 [main] TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9001 (http)
+[INFO ] 2017-11-22 14:23:47.205 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2017-11-22 14:23:47.206 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+[INFO ] 2017-11-22 14:23:47.311 [localhost-startStop-1] [/gamecenter] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2017-11-22 14:23:47.311 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 2539 ms
+[INFO ] 2017-11-22 14:23:47.508 [localhost-startStop-1] ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2017-11-22 14:23:47.521 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'simpleCorsFilter' to: [/*]
+[INFO ] 2017-11-22 14:23:47.522 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2017-11-22 14:23:47.522 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2017-11-22 14:23:47.522 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2017-11-22 14:23:47.522 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2017-11-22 14:23:48.723 [main] RequestMappingHandlerMapping - Mapped "{[/face/age],methods=[POST]}" onto public com.cjj.response.GeneralResponse com.cjj.game.controller.FaceController.getContractOwner(com.cjj.request.SingleValueReq)
+[INFO ] 2017-11-22 14:23:48.725 [main] RequestMappingHandlerMapping - Mapped "{[/face/file],methods=[POST]}" onto public com.cjj.response.GeneralResponse com.cjj.game.controller.FaceController.uploadWithIdCardPhoto(org.springframework.web.multipart.MultipartFile)
+[INFO ] 2017-11-22 14:23:48.725 [main] RequestMappingHandlerMapping - Mapped "{[/gc/top10],methods=[POST]}" onto public com.cjj.response.GeneralResponse com.cjj.game.controller.GameCenterController.top10()
+[INFO ] 2017-11-22 14:23:48.726 [main] RequestMappingHandlerMapping - Mapped "{[/gc/add],methods=[POST]}" onto public com.cjj.response.GeneralResponse com.cjj.game.controller.GameCenterController.getContractOwner(com.cjj.request.AddScoreReq)
+[INFO ] 2017-11-22 14:23:48.726 [main] RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2017-11-22 14:23:48.730 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2017-11-22 14:23:48.731 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2017-11-22 14:23:48.731 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2017-11-22 14:23:48.734 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2017-11-22 14:23:48.735 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2017-11-22 14:23:50.029 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43c1b556: startup date [Wed Nov 22 14:23:44 CST 2017]; root of context hierarchy
+[INFO ] 2017-11-22 14:23:50.084 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2017-11-22 14:23:50.084 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2017-11-22 14:23:50.113 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN ] 2017-11-22 14:23:50.424 [main] RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+[INFO ] 2017-11-22 14:23:50.469 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2017-11-22 14:23:50.476 [main] DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2017-11-22 14:23:50.477 [main] DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2017-11-22 14:23:50.533 [main] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2017-11-22 14:23:50.558 [main] ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2017-11-22 14:23:50.720 [main] CachingOperationNameGenerator - Generating unique operation named: getContractOwnerUsingPOST_1
+[INFO ] 2017-11-22 14:23:50.752 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+[INFO ] 2017-11-22 14:23:50.770 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+[INFO ] 2017-11-22 14:23:50.807 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2017-11-22 14:23:50.845 [main] TomcatEmbeddedServletContainer - Tomcat started on port(s): 9001 (http)
+[INFO ] 2017-11-22 14:23:50.860 [main] PatentServerApplication - Started PatentServerApplication in 6.305 seconds (JVM running for 7.048)
+[INFO ] 2017-11-22 14:24:15.859 [http-nio-9001-exec-2] [/gamecenter] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2017-11-22 14:24:15.860 [http-nio-9001-exec-2] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2017-11-22 14:24:15.884 [http-nio-9001-exec-2] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+[INFO ] 2017-11-22 14:32:02.839 [http-nio-9001-exec-1] FaceController - pathStr=/uploadFiles/photos/users/jpg/93234458-2EC7-4475-8157-7FB2C639D727.jpg
+[INFO ] 2017-11-22 14:32:02.839 [http-nio-9001-exec-1] FaceController - Write file to \uploadFiles\photos\users\jpg\93234458-2EC7-4475-8157-7FB2C639D727.jpg.
+[INFO ] 2017-11-22 14:51:39.098 [http-nio-9001-exec-5] FaceController - pathStr=/uploadFiles/photos/users/jpg/06FA106A-714D-48CB-9E6E-786B6F1E4D36.jpg
+[INFO ] 2017-11-22 14:51:39.099 [http-nio-9001-exec-5] FaceController - Write file to \uploadFiles\photos\users\jpg\06FA106A-714D-48CB-9E6E-786B6F1E4D36.jpg.
+[INFO ] 2017-11-22 14:53:03.490 [http-nio-9001-exec-8] FaceController - pathStr=/uploadFiles/photos/users/jpg/D1D22BE2-48C0-4DCB-B2C2-ACE19014235E.jpg
+[INFO ] 2017-11-22 14:53:03.491 [http-nio-9001-exec-8] FaceController - Write file to \uploadFiles\photos\users\jpg\D1D22BE2-48C0-4DCB-B2C2-ACE19014235E.jpg.
+[INFO ] 2017-11-22 15:04:26.440 [http-nio-9001-exec-10] FaceController - pathStr=/uploadFiles/photos/users/jpg/A6E863B1-C6F4-4CEE-AEBC-8FF3398ED125.jpg
+[INFO ] 2017-11-22 15:04:26.440 [http-nio-9001-exec-10] FaceController - Write file to \uploadFiles\photos\users\jpg\A6E863B1-C6F4-4CEE-AEBC-8FF3398ED125.jpg.
+[INFO ] 2017-11-22 15:05:24.440 [http-nio-9001-exec-7] FaceController - pathStr=/uploadFiles/photos/users/jpg/71F34A91-D76F-464C-B884-A70535878028.jpg
+[INFO ] 2017-11-22 15:05:24.440 [http-nio-9001-exec-7] FaceController - Write file to \uploadFiles\photos\users\jpg\71F34A91-D76F-464C-B884-A70535878028.jpg.
+[INFO ] 2017-11-22 15:06:37.266 [http-nio-9001-exec-3] FaceController - pathStr=/uploadFiles/photos/users/jpg/C56C5333-24AC-4932-8692-C4954B9BA188.jpg
+[INFO ] 2017-11-22 15:06:37.266 [http-nio-9001-exec-3] FaceController - Write file to \uploadFiles\photos\users\jpg\C56C5333-24AC-4932-8692-C4954B9BA188.jpg.
+[INFO ] 2017-11-22 15:06:55.200 [http-nio-9001-exec-1] FaceController - pathStr=/uploadFiles/photos/users/jpg/B7F108B5-ED45-4C20-AC64-E18EE50DB5C0.jpg
+[INFO ] 2017-11-22 15:06:55.200 [http-nio-9001-exec-1] FaceController - Write file to \uploadFiles\photos\users\jpg\B7F108B5-ED45-4C20-AC64-E18EE50DB5C0.jpg.
+[INFO ] 2017-11-22 15:16:42.438 [http-nio-9001-exec-5] FaceController - pathStr=/uploadFiles/photos/users/jpg/50D43831-4F7A-4962-A66D-283193572550.jpg
+[INFO ] 2017-11-22 15:16:42.439 [http-nio-9001-exec-5] FaceController - Write file to \uploadFiles\photos\users\jpg\50D43831-4F7A-4962-A66D-283193572550.jpg.
+[INFO ] 2017-11-22 16:34:10.012 [RMI TCP Connection(2)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2017-11-22 16:34:10.013 [RMI TCP Connection(2)-127.0.0.1] AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43c1b556: startup date [Wed Nov 22 14:23:44 CST 2017]; root of context hierarchy
+[INFO ] 2017-11-22 16:34:10.041 [RMI TCP Connection(2)-127.0.0.1] DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+[INFO ] 2017-11-22 16:34:10.047 [RMI TCP Connection(2)-127.0.0.1] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2017-11-22 16:34:18.808 [main] PatentServerApplication - Starting PatentServerApplication on DESKTOP-4P6MLVA with PID 27644 (C:\projects\others\server\gameServer\target\classes started by 10308 in C:\projects\others\server\gameServer)
+[INFO ] 2017-11-22 16:34:18.811 [main] PatentServerApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-11-22 16:34:18.847 [main] AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43c1b556: startup date [Wed Nov 22 16:34:18 CST 2017]; root of context hierarchy
+[INFO ] 2017-11-22 16:34:18.920 [background-preinit] Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2017-11-22 16:34:19.554 [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2017-11-22 16:34:19.902 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.cjj.game.config.RedisConfig$$EnhancerBySpringCGLIB$$157fa0c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2017-11-22 16:34:19.908 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c644d36b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2017-11-22 16:34:19.933 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.cjj.game.config.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2017-11-22 16:34:19.934 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$f570989] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2017-11-22 16:34:20.211 [main] TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9001 (http)
+[INFO ] 2017-11-22 16:34:20.218 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2017-11-22 16:34:20.220 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+[INFO ] 2017-11-22 16:34:20.314 [localhost-startStop-1] [/gamecenter] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2017-11-22 16:34:20.314 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1469 ms
+[INFO ] 2017-11-22 16:34:20.457 [localhost-startStop-1] ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2017-11-22 16:34:20.460 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'simpleCorsFilter' to: [/*]
+[INFO ] 2017-11-22 16:34:20.461 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2017-11-22 16:34:20.461 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2017-11-22 16:34:20.461 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2017-11-22 16:34:20.461 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2017-11-22 16:34:21.062 [main] RequestMappingHandlerMapping - Mapped "{[/face/file],methods=[POST]}" onto public com.cjj.response.GeneralResponse com.cjj.game.controller.FaceController.uploadWithIdCardPhoto(org.springframework.web.multipart.MultipartFile)
+[INFO ] 2017-11-22 16:34:21.063 [main] RequestMappingHandlerMapping - Mapped "{[/face/age],methods=[POST]}" onto public com.cjj.response.GeneralResponse com.cjj.game.controller.FaceController.getContractOwner(com.cjj.request.SingleValueReq)
+[INFO ] 2017-11-22 16:34:21.064 [main] RequestMappingHandlerMapping - Mapped "{[/gc/top10],methods=[POST]}" onto public com.cjj.response.GeneralResponse com.cjj.game.controller.GameCenterController.top10()
+[INFO ] 2017-11-22 16:34:21.064 [main] RequestMappingHandlerMapping - Mapped "{[/gc/add],methods=[POST]}" onto public com.cjj.response.GeneralResponse com.cjj.game.controller.GameCenterController.getContractOwner(com.cjj.request.AddScoreReq)
+[INFO ] 2017-11-22 16:34:21.065 [main] RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2017-11-22 16:34:21.067 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2017-11-22 16:34:21.068 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2017-11-22 16:34:21.069 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2017-11-22 16:34:21.072 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2017-11-22 16:34:21.072 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2017-11-22 16:34:21.762 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43c1b556: startup date [Wed Nov 22 16:34:18 CST 2017]; root of context hierarchy
+[INFO ] 2017-11-22 16:34:21.807 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2017-11-22 16:34:21.807 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2017-11-22 16:34:21.837 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN ] 2017-11-22 16:34:22.041 [main] RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+[INFO ] 2017-11-22 16:34:22.082 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2017-11-22 16:34:22.089 [main] DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2017-11-22 16:34:22.089 [main] DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2017-11-22 16:34:22.102 [main] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2017-11-22 16:34:22.111 [main] ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2017-11-22 16:34:22.201 [main] CachingOperationNameGenerator - Generating unique operation named: getContractOwnerUsingPOST_1
+[INFO ] 2017-11-22 16:34:22.222 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+[INFO ] 2017-11-22 16:34:22.229 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+[INFO ] 2017-11-22 16:34:22.239 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2017-11-22 16:34:22.251 [main] TomcatEmbeddedServletContainer - Tomcat started on port(s): 9001 (http)
+[INFO ] 2017-11-22 16:34:22.256 [main] PatentServerApplication - Started PatentServerApplication in 3.619 seconds (JVM running for 4.364)
+[INFO ] 2017-11-22 17:21:50.602 [http-nio-9001-exec-2] [/gamecenter] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2017-11-22 17:21:50.604 [http-nio-9001-exec-2] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2017-11-22 17:21:50.663 [http-nio-9001-exec-2] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 58 ms
+[INFO ] 2017-11-22 17:21:58.279 [http-nio-9001-exec-4] FaceController - get age,req=SingleValueReq [value=http://game.nobbican.com/uploadFiles/photos/users/jpg/1975F3E0-7ABD-4BB2-88EF-3150C8D07501.jpg]
+[INFO ] 2017-11-22 17:22:35.663 [http-nio-9001-exec-2] FaceController - get age,req=SingleValueReq [value=http://game.nobbican.com/uploadFiles/photos/users/jpg/1975F3E0-7ABD-4BB2-88EF-3150C8D07501.jpg]
+[INFO ] 2017-11-22 17:26:40.082 [RMI TCP Connection(2)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2017-11-22 17:26:40.082 [RMI TCP Connection(2)-127.0.0.1] AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43c1b556: startup date [Wed Nov 22 16:34:18 CST 2017]; root of context hierarchy
+[INFO ] 2017-11-22 17:26:40.084 [RMI TCP Connection(2)-127.0.0.1] DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+[INFO ] 2017-11-22 17:26:40.086 [RMI TCP Connection(2)-127.0.0.1] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
