@@ -32,7 +32,7 @@ public class FaceController {
 	FaceService faceService;
 	
 	@RequestMapping(value = "age", method = RequestMethod.POST)
-	public GeneralResponse getContractOwner(@RequestBody  SingleValueReq req) {
+	public GeneralResponse getAge(@RequestBody  SingleValueReq req) {
 		logger.info("get age,req=" + req.toString());
 		String age = "";
 		try {
@@ -43,6 +43,18 @@ public class FaceController {
 			return new GeneralResponse(e.getMessage(), ErrorCode.FAIL);
 		}
 		return new GeneralResponse(age, ErrorCode.OK);
+	}
+	
+	@RequestMapping(value = "all", method = RequestMethod.POST)
+	public GeneralResponse getAll(@RequestBody  SingleValueReq req) {
+		logger.info("get all,req=" + req.toString());
+		try {
+			String url = req.getValue();
+			return new GeneralResponse(faceService.getAll(url), ErrorCode.OK);
+		} catch (Exception e) {
+			logger.info("request format error,error msg=" + e.getMessage());
+			return new GeneralResponse(e.getMessage(), ErrorCode.FAIL);
+		}
 	}
 	
 	/**

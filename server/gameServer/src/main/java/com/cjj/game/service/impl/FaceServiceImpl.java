@@ -20,4 +20,13 @@ public class FaceServiceImpl implements FaceService{
 		return "";
 	}
 
+	@Override
+	public FaceRecDTO getAll(String picUrl) {
+		List<FaceRecDTO> dtos = FaceUtil.getFaceDTO(picUrl);
+		if(dtos != null && dtos.size() > 0) {
+			return dtos.get(0);
+		}
+		return null;
+	}
+
 }
