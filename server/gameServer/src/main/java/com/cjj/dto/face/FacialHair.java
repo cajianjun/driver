@@ -1,8 +1,17 @@
 package com.cjj.dto.face;
 
 public class FacialHair{
+    /**
+     * 上嘴唇小胡子
+     */
     private float moustache;
+	/**
+	 * 络腮胡
+	 */
 	private float beard;
+	/**
+	 * 两边鬓胡
+	 */
 	private float sideburns;
 	
 	public FacialHair() {

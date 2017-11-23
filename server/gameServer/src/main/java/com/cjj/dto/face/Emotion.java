@@ -1,13 +1,37 @@
 package com.cjj.dto.face;
 
 public class Emotion{
+    /**
+     * 生气
+     */
     private float anger;
+	/**
+	 * 鄙视
+	 */
 	private float contempt;
+	/**
+	 * 厌恶
+	 */
 	private float disgust;
+	/**
+	 * 恐惧
+	 */
 	private float fear;
+	/**
+	 * 开心
+	 */
 	private float happiness;
+	/**
+	 * 自然
+	 */
 	private float neutral;
+	/**
+	 * 悲伤
+	 */
 	private float sadness;
+	/**
+	 * 惊喜
+	 */
 	private float surprise;
 	
 	public Emotion() {

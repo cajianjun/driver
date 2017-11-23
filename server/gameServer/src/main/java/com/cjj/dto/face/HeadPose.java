@@ -1,5 +1,10 @@
 package com.cjj.dto.face;
 
+/**
+ * face rotation info
+ * @author 10308
+ *
+ */
 public class HeadPose{
     private float pitch;
 	private float roll;
